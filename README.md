@@ -120,6 +120,32 @@ $ python3 runtimes.py --max_x=22
 and copy/paste the resulting table into this README file below this line.
 
 <!-- add the table here -->
+|                | `timsort`     | `merge_sorted`| `quick_sorted`|
+| -------------- | ------------- | ------------- | ------------- |
+| `len(xs)=2**0` |   2.98e-06    |   1.90e-06    |   1.68e-06    |
+| `len(xs)=2**1` |   2.01e-06    |   6.84e-06    |   8.47e-06    |
+| `len(xs)=2**2` |   1.87e-06    |   1.11e-05    |   1.16e-05    |
+| `len(xs)=2**3` |   2.28e-06    |   2.28e-05    |   2.31e-05    |
+| `len(xs)=2**4` |   3.32e-06    |   4.73e-05    |   5.02e-05    |
+| `len(xs)=2**5` |   5.36e-06    |   1.00e-04    |   1.11e-04    |
+| `len(xs)=2**6` |   1.09e-05    |   2.25e-04    |   2.74e-04    |
+| `len(xs)=2**7` |   2.09e-05    |   5.00e-04    |   6.09e-04    |
+| `len(xs)=2**8` |   4.55e-05    |   1.09e-03    |   1.42e-03    |
+| `len(xs)=2**9` |   1.00e-04    |   2.41e-03    |   3.09e-03    |
+| `len(xs)=2**10` |   2.20e-04    |   5.27e-03    |   7.24e-03    |
+| `len(xs)=2**11` |   4.79e-04    |   1.15e-02    |   1.46e-02    |
+| `len(xs)=2**12` |   1.05e-03    |   2.51e-02    |   3.10e-02    |
+| `len(xs)=2**13` |   2.27e-03    |   5.38e-02    |   6.32e-02    |
+| `len(xs)=2**14` |   2.84e-03    |   6.68e-02    |   8.56e-02    |
+| `len(xs)=2**15` |   6.14e-03    |   1.55e-01    |   1.93e-01    |
+| `len(xs)=2**16` |   1.44e-02    |   3.14e-01    |   4.12e-01    |
+| `len(xs)=2**17` |   3.29e-02    |   7.07e-01    |   8.52e-01    |
+| `len(xs)=2**18` |   7.06e-02    |   1.52e+00    |   1.91e+00    |
+| `len(xs)=2**19` |   2.57e-01    |   3.36e+00    |   4.13e+00    |
+| `len(xs)=2**20` |   3.89e-01    |   7.06e+00    |   9.38e+00    |
+| `len(xs)=2**21` |   9.43e-01    |   1.55e+01    |   2.11e+01    |
+| `len(xs)=2**22` |   2.16e+00    |   3.29e+01    |   4.85e+01    |
+
 
 You should observe that python's built-in sort function is 10-100x faster than yours.
 All functions have the same wort-case asymptotic complexity (i.e. $\Theta(n \log n)$),
