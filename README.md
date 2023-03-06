@@ -239,6 +239,32 @@ then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
 <!-- add the table here -->
+|                | `timsort`     | `merge_sorted`| `quick_sorted`|
+| -------------- | ------------- | ------------- | ------------- |
+| `len(xs)=2**0` |   2.92e-06    |   1.92e-06    |   1.78e-06    |
+| `len(xs)=2**1` |   2.03e-06    |   7.28e-06    |   7.93e-06    |
+| `len(xs)=2**2` |   1.80e-06    |   1.20e-05    |   1.17e-05    |
+| `len(xs)=2**3` |   1.94e-06    |   2.21e-05    |   2.03e-05    |
+| `len(xs)=2**4` |   2.06e-06    |   4.40e-05    |   4.15e-05    |
+| `len(xs)=2**5` |   3.16e-06    |   9.36e-05    |   8.67e-05    |
+| `len(xs)=2**6` |   3.05e-06    |   2.01e-04    |   1.90e-04    |
+| `len(xs)=2**7` |   4.32e-06    |   4.36e-04    |   4.28e-04    |
+| `len(xs)=2**8` |   6.81e-06    |   9.44e-04    |   1.02e-03    |
+| `len(xs)=2**9` |   1.25e-05    |   2.04e-03    |   2.12e-03    |
+| `len(xs)=2**10` |   2.22e-05    |   4.37e-03    |   4.84e-03    |
+| `len(xs)=2**11` |   5.04e-05    |   9.40e-03    |   1.02e-02    |
+| `len(xs)=2**12` |   9.40e-05    |   2.01e-02    |   2.21e-02    |
+| `len(xs)=2**13` |   1.87e-04    |   4.28e-02    |   4.95e-02    |
+| `len(xs)=2**14` |   4.01e-04    |   7.53e-02    |   5.62e-02    |
+| `len(xs)=2**15` |   5.26e-04    |   1.06e-01    |   1.21e-01    |
+| `len(xs)=2**16` |   8.94e-04    |   2.41e-01    |   2.77e-01    |
+| `len(xs)=2**17` |   1.97e-03    |   4.71e-01    |   6.01e-01    |
+| `len(xs)=2**18` |   4.03e-03    |   1.02e+00    |   1.22e+00    |
+| `len(xs)=2**19` |   9.32e-03    |   2.15e+00    |   3.12e+00    |
+| `len(xs)=2**20` |   2.23e-02    |   5.06e+00    |   6.07e+00    |
+| `len(xs)=2**21` |   4.67e-02    |   1.06e+01    |   1.29e+01    |
+| `len(xs)=2**22` |   9.08e-02    |   2.21e+01    |   2.71e+01    |
+| `len(xs)=2**23` |   1.82e-01    |   4.64e+01    |   5.60e+01    |
 
 You should notice that the built-in `sorted` function ran much faster on this input,
 but your `merge_sorted` and `quick_sorted` functions have essentially the same runtimes.
